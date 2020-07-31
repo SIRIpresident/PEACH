@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PEACH GUILD</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            main {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form {
+                width: 400px;
+                border: 1px solid #EBEBEB;
+                padding: 5rem;
+            }
+
+            button {
+                margin-top: 2rem;
+            }
+            #top {
+                background-image: url("https://imgur.com/BU3a3Dq.png");
+                background-position-x: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+            #top > img {
+                height: 20%;
+            }
+            .top_text {
+                color: white;
+                text-align: center;
+                font-family: 'Nanum Myeongjo', serif;
+                font-size: 100px;
+                text-shadow: 2px 2px 2px gray;
+            }
+            .goodasan {
+                text-align: center;
+                color: white;
+                font-family: 'Righteous', cursive;
+                text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+            }
+            hr {
+                border: solid 2px white;
+                border-radius: 3px;
+                width: 50%;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                scroll-behavior: smooth;
+                overflow: auto;
+                scroll-snap-type: y mandatory;
+            }
+            .section {
+                width: 100%;
+                height: 100%;
+                scroll-snap-align: start;
+                text-align: center;
+            }
+            .navigator {
+                text-align: center;
+                background-color: black;
+                width: 100%;
+                height: 50px;
+                position: sticky;
+                top: 0;
+                color: white;
+                font-size: 40px;
+                font-family: 'Nanum Myeongjo', serif;
+            }
+            #btn_group {
+                position: fixed;
+                right: 40px;
+                top: calc(50vh - 40px);
+            }
+            #btn_1 {
+                width: 14px;
+                height: 5px;
+                background-color: rgb(175, 175, 175);
+                transition: 0.5s;
+                margin-bottom: 7px;
+            }
+            #btn_1:hover {
+                height: 9px;
+                background-color: rgb(61, 61, 61);
+            }
+            #btn_2 {
+                width: 14px;
+                height: 14px;
+                background-color: rgb(175, 175, 175);
+                transition: 0.5s;
+                margin-bottom: 5px;
+                border-radius: 7px;
+            }
+            #btn_2:hover {
+                background-color: rgb(61, 61, 61);
+            }
+            #btn_3 {
+                width: 14px;
+                height: 14px;
+                background-color: rgb(175, 175, 175);
+                transition: 0.5s;
+                margin-bottom: 5px;
+                border-radius: 7px;
+            }
+            #btn_3:hover {
+                background-color: rgb(61, 61, 61);
+            }
+            #btn_4 {
+                width: 14px;
+                height: 14px;
+                background-color: rgb(175, 175, 175);
+                transition: 0.5s;
+                border-radius: 7px;
+            }
+            #btn_4:hover {
+                background-color: rgb(61, 61, 61);
+            }
+            #btn_5 {
+                width: 14px;
+                height: 5px;
+                background-color: rgb(175, 175, 175);
+                transition: 0.5s;
+                margin-top: 7px;
+            }
+            #btn_5:hover {
+                background-color: rgb(61, 61, 61);
+                height: 9px;
+            }
+        </style>
+    </head>
+    <body
+        oncontextmenu='return false'
+        ondragstart='return false'
+        onselectstart='return false'>
+        <div class="container">
+            <div id="btn_group">
+                <div id="btn_1" onclick="location.href='#top'"></div>
+                <div id="btn_2" onclick="location.href='#first'"></div>
+                <div id="btn_3" onclick="location.href='#second'"></div>
+                <div id="btn_4" onclick="location.href='#third'"></div>
+                <div id="btn_5" onclick="location.href='#bottom'"></div>
+            </div>
+            <div id="top" class="section" style="background-color: black; height: 100%;">
+                <div style="height: 20vh;"></div>
+                <img src="https://imgur.com/QqnuwvI.png" style="height: 50vh;">
+            </div>
+            <div class="navigator">
+                <span onclick="location.href='#top'"><img src="https://imgur.com/Y88GrtZ.png" style="height: 40px; margin-top: 5px;"></span>
+            </div>
+            <div class="section" style="" id="first">
+                <div style="height: 25%;"></div>
+                <div>
+                    <p style="float: left; margin-top: 7%; margin-left: 20vw;">
+                        안녕하세요, 저희는 일곱개의 대죄:Grand Cross<br/>
+                        한국 서버의 Lv.10 길드, 복숭아길드입니다.<br/>
+                        저희 길드의 특징은 길드의 스펙이 아닌<br/>
+                        자유도를 우선순위로 한다는 것입니다.<br/>
+                        그래서 가입조건에 계정투급 제한이나 투급제한,<br/>
+                        공헌도 제한, 그리고 랭크 제한이 없습니다.<br/>
+                        그리고 길드 내에 고스펙 유저분들도 꽤나 계셔서<br/>
+                        뉴비들이 들어와서 성장하기에 좋은 길드입니다.<br/>
+                        길드톡이 있지만 필수가 아니고 출석만 해주시면 됩니다.
+                    </p>
+                    <img
+                        style="float: left; height: 50vh; margin-left: 30px;"
+                        src="https://imgur.com/EzG2ACF.jpg"/>
+                </div>
+            </div>
+            <div class="section" style="" id="second">
+                <div style="height: 25%;"></div>
+                <div>
+                    <img
+                        style="float: left; height: 50vh;; margin-left: 300px;"
+                        src="https://imgur.com/QqnuwvI.png"/>
+                    <p style="float: left; left: 0; margin-top: 4%; margin-left: 20px;">
+                        다음은 복숭아길드의 가입조건입니다.<br/>
+                        - 20세 이상인 성인(기존 단원분들은 예외)<br/>
+                        - 한곳에 오래 자리잡고 길드생활을 하실 분<br/>
+                        - 매일매일 출석하실 수 있으신 분<br/>
+                        - 포럼 및 기타 커뮤니티에서 분쟁을 일으키시지 않는 분<br/><br/>
+                        다음은 복숭아 길드의 면접방법입니다.<br/>
+                        아래의 "신청하기"에서 신청을 하시면 저희가 확인한 후<br/>
+                        정보 확인 후 가입조건에 맞을 경우<br/>
+                        "신청하기"에서 남겨주신카톡 ID로 저희가<br/>
+                        합격 여부 메시지를 보내드리겠습니다.<br/>
+                    </p>
+                </div>
+            </div>
+            <div class="section" style="" id="third">
+                <main>
+                    <form>
+                        <label for="title" style="font-size: larger;">가입 신청하기</label><br/><br/>
+                        <label for="userId">닉네임</label><br/>
+                        <input type="text" name="userId" id="userId"/><br/>
+                        <label for="age">나이</label><br/>
+                        <input type="number" name="age" id="age"/><br/>
+                        <label for="kakaId">카카오톡 ID</label><br/>
+                        <input type="text" name="kakaId" id="kakaId"/><br/>
+                        <button id="addBtn" class="btn waves-effect waves-light">신청</button>
+                    </form>
+                </main>
+            </div>
+            <div
+                class="section"
+                id="bottom"
+                style="height: 70px; background-color: black; text-align: right;color: white; line-height: 60px; font-size: 40px;"></div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+        <script>
+            var smartPhones = ['iphone', 'ipod', 'android'];
+            for (var i in smartPhones) {
+                if (navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))) {
+                    location = 'http://m.복숭아.kro.kr';
+                }
+            }
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBbRd1LHBFNU3e3Sy71lNRStw2OKvmPEKk",
+                authDomain: "peach-851bf.firebaseapp.com",
+                databaseURL: "https://peach-851bf.firebaseio.com",
+                projectId: "peach-851bf",
+                storageBucket: "peach-851bf.appspot.com",
+                messagingSenderId: "576038555141",
+                appId: "1:576038555141:web:559f4694db28a320d0566c",
+                measurementId: "G-YBQ5QJJGPY"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script>
+            const userId = document.getElementById('userId');
+            const kakaId = document.getElementById('kakaId');
+            const age = document.getElementById('age');
+            const addBtn = document.getElementById('addBtn');
+
+            const database = firebase.database();
+            const rootRef = database.ref('users');
+
+            addBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                rootRef
+                    .child(userId.value)
+                    .set({kakao_id: kakaId.value, age: age.value});
+            });
+
+            rootRef.on('child_added', snapshot => {
+                console.log('Child(s) added!');
+            });
+        </script>
+    </body>
+</html>
